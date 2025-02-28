@@ -1,18 +1,18 @@
-## Getting Started
+# Connect4 AI
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a Connect4 game featuring an AI opponent implemented using the Minimax algorithm. While the underlying UI and game logic were provided by my professor, I developed the Minimax-based decision-making system that allows the AI to play optimally.
 
-## Folder Structure
+## Features
+- Fully functional Connect4 game with a graphical interface
+- AI opponent using the Minimax algorithm for optimal play
+- Human vs. AI gameplay
 
-The workspace contains two folders by default, where:
+## Minimax Implementation
+The AI decision-making logic is implemented in the `minimaxag.java` file. This algorithm evaluates possible game states to a specified depth and selects the optimal move to maximize its chances of winning while minimizing potential losses.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Credits
+- **UI and game framework**: Provided by my professor, Dr. Arisoa Randrianasolo
+- **Minimax AI implementation**: Developed by myself, Wes Orr
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## License
+This project is for educational purposes. Feel free to use and modify it, but please provide credit where applicable.
