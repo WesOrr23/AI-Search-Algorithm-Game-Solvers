@@ -31,7 +31,7 @@ This repository contains three different AI-driven game projects: **Tic-Tac-Toe*
 ## Shared Components
 
 ### Minimax AI (Tic-Tac-Toe and Connect4)
-The **Minimax agents** for both Tic-Tac-Toe and Connect4 are nearly the same. Both games use the same core decision-making system, evaluating all potential moves and selecting the optimal one based on the Minimax algorithm. The implementation is generalized to work for both games, making it easy to adapt or extend the AI for other similar turn-based games.
+The **Minimax agents** for both Tic-Tac-Toe and Connect4 are nearly the same. Both games use the same core decision-making system, evaluating potential moves and selecting the optimal one based on the Minimax algorithm. The implementation is generalized to work for both games, making it easy to adapt or extend the AI for other similar turn-based games.
 
 ## Credits
 - **UI and game frameworks**: Provided by my professor, Dr. Arisoa Randrianasolo
