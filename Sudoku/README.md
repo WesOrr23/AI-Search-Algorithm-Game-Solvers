@@ -1,18 +1,23 @@
-## Getting Started
+# Sudoku Solver AI
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a Sudoku puzzle solver featuring an AI that uses a backtracking algorithm to solve the puzzle. The user provides an initial Sudoku grid, and the AI solves it.
 
-## Folder Structure
+## Features
+- User can input an initial Sudoku puzzle (with some cells pre-filled)
+- AI solves the puzzle using a backtracking algorithm assisted by the domain-reduction AC3 algorithm.
+- Provides a solution to the Sudoku puzzle, if solvable
 
-The workspace contains two folders by default, where:
+## Backtracking Algorithm Implementation
+The AI decision-making logic is implemented in the `SudokuSolver.java` file. It uses a backtracking approach to systematically solve the puzzle by filling the grid while ensuring that all Sudoku constraints are met.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How it Works
+1. The user enters an initial Sudoku puzzle with some pre-filled numbers (empty cells can be left for the AI to fill).
+2. The AI solves the puzzle by exploring potential number placements recursively, backtracking whenever it encounters a conflict.
+3. Once a solution is found, the solved Sudoku grid is displayed.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Credits
+- **UI and game framework**: Provided by my professor, Dr. Arisoa Randrianasolo
+- **Backtracking AI implementation**: Developed by myself, Wes Orr
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## License
+This project is for educational purposes. Feel free to use and modify it, but please provide credit where applicable.
