@@ -21,7 +21,7 @@ public class minmaxag {
     /// <summary>
     /// Given a current state, determines whose turn it is.
     /// </summary>
-    /// <return> A single character denoting the player whose turn it is: X or Y </return>
+    /// <return> A single character denoting the player whose turn it is: X or O </return>
     private char getPlayerTurn(State state)
     {
         int xCount = 0;
@@ -50,7 +50,7 @@ public class minmaxag {
 
     /// <summary>
     /// Determines if the input state is terminal, i.e. the game has been one by either player, or there are no more possible actions.
-    /// Note: Inside the utility function, the terminalStateCheck flag is set so that it does not return a state desirability score if there is not absolute winner.
+    /// Note: Inside the utility function, the terminalStateCheck flag is set so that it does not return a state desirability score if there is not an absolute winner.
     /// </summary>
     /// <return> A boolean (True/False) if the state is terminal. </return>
     private boolean isTerminalState(State state) { return utility(state, true) != 0 || getAllActions(state).size() <= 0;}
